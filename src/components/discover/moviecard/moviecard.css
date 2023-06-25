@@ -1,0 +1,79 @@
+.weekly-content {
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: flex-start;
+    padding-left: 40px;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.each-card {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card {
+    /* padding: 5px 10px; */
+
+    margin-right: 20px;
+    width: 150px;
+
+}
+
+.image {
+    border-radius: 10px;
+    width: 150px;
+    height: 225px;
+    object-fit: cover
+}
+
+.movie-title {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.title-anchor {
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.title-anchor:hover {
+    color: rgba(var(--tmdbLightBlue), 1);
+    cursor: pointer;
+}
+
+.release-date {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.weekly-content::-webkit-scrollbar {
+    height: 8px;
+    background-color: none;
+
+}
+
+
+.weekly-content::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--scrollerGrey), 1);
+    border-radius: 20px;
+}
+
+.more {
+    position: absolute;
+    top: 15px;
+    left: 130px;
+  
+    
+  
+   
+    
+}

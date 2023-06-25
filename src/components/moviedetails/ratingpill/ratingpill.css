@@ -1,0 +1,20 @@
+.rating-pill{
+    width: 33px;
+    height: 20px;
+    margin-left: 14px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    padding: 1px 8px;
+    display: inline-flex;
+    border-radius: 8px;
+}
+.star-img{
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+    margin-right: 2px;
+}

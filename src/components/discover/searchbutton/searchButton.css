@@ -1,0 +1,13 @@
+.search-button {
+    height: 46px;
+    border-radius: 30px;
+    border: none;
+    width: 100px;
+    background-color: blue;
+    background: linear-gradient(to right, rgba(var(--tmdbLightGreen), 1) 0%, rgba(var(--tmdbLightBlue), 1) 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 26px;
+
+}

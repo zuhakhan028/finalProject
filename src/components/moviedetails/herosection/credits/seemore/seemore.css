@@ -1,0 +1,59 @@
+.people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 40px;
+}
+.people-profile{
+    width: 66px;
+    height: 66px;
+    border-radius: 5px;
+}
+.cast-people{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+}
+.crew{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+}
+.cast-title{
+    font-size: 22.4px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.crew-title{
+    font-size: 22.4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.people-div{
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+
+}
+.people-names{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 14px ;
+}
+.count{
+    color:gray;
+}
+
+.fig-caption-name{
+    padding: 10px 0px 0px 10px;
+    font:16px;
+    font-weight:bold
+}
+.fig-character-name{
+    padding:0px 10px;
+    font:14px;
+   
+}

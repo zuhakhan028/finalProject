@@ -1,0 +1,65 @@
+.footer{
+    width:1517px;
+    height: 325px;
+    background-image: radial-gradient(at 30% top, #031d33 0%, rgba(var(--tmdbDarkBlue), 1) 70%);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+  
+}
+.footer-logo{
+    width: 130px;
+    height: 94px;
+    margin-bottom: 40px;
+}
+.user-button{
+    width: 144px;
+    height: 42px;
+    color:rgba(var(--tmdbLightBlue));
+    background-color: white;
+    border-radius: 8px;
+    font-size:18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.footer-inner-nav{
+    width: 783px;
+    height: 311px;
+    display: flex;
+}
+
+.footer-nav{
+    display: flex;
+}
+.footer-lists{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+   
+}
+
+
+.footer-list-title{
+    font-size: 19px;
+    font-weight: bold;
+    color:white;
+  
+}
+
+.each-footer-list{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.footer-list-item{
+  list-style: none;
+  line-height: 1.6em;
+  font-size: 16px;
+  font-weight: 600;
+}

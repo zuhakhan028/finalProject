@@ -1,0 +1,27 @@
+.polaroid-img{
+    width: 138px;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--lightGrey), 1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: left;
+    object-fit: contain;
+    margin: 10px 4px 10px 10px;
+    padding-bottom: 10px;
+}
+.profile-img{
+    width: 138px;
+    height: 175px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   
+}
+.fig-caption-name{
+    padding: 10px 0px 0px 10px;
+    font:16px;
+    font-weight:bold
+}
+.fig-caption-character{
+    padding:0px 10px;
+    font:14px;
+   
+}

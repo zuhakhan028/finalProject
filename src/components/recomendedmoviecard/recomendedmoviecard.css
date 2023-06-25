@@ -1,0 +1,264 @@
+.movie-details-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+ flex-direction: column;
+
+}
+
+.cast-div {
+    width: 1022px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: 18px;
+
+}
+
+.cast-div::-webkit-scrollbar {
+
+    height: 8px;
+    background-color: none;
+}
+
+.cast-div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(var(--scrollerGrey), 0.5);
+
+
+}
+
+.right-div {
+    width: 260px;
+    padding-left: 30px;
+}
+
+.cast {
+    display: flex;
+    width: 1400px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    justify-content: start;
+    padding-left: 80px;
+
+}
+
+.top-billed-cast {
+    font-size: 22.4px;
+    margin: 0px 5px 20px;
+    font-weight: 600;
+}
+
+.see-more {
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    padding: 70px 10px;
+}
+
+.view-more {
+    width: 180px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+.right-arrow {
+    padding-top: 5px;
+    padding-left: 10px;
+
+}
+
+.right-arrow-img {
+    width: 15px;
+}
+
+.full-cast {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    font-weight: 500
+}
+
+.social {
+    border-top: 1px solid rgba(var(--scrollerGrey), 1);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.social-title {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22.4px;
+}
+
+.reviews {
+    margin-right: 24px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.discussions {
+    margin-right: 24px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.link-movie {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    width: 30px;
+    height: 28px;
+    border-left: 1px solid rgba(var(--scrollerGrey));
+
+
+}
+
+.link-movie-img {
+    width: 39px;
+    height: 30px;
+}
+
+.link-justnow {
+    width: 27px;
+    height: 28px;
+
+
+}
+
+.links-div {
+    display: flex;
+
+}
+
+.keywords-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+
+
+}
+
+.keyword-title {
+    margin-bottom: 10px;
+}
+
+.content-score-div {
+    margin-bottom: 30px;
+}
+
+.content-score {
+    width: 260px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
+
+}
+
+.score-opinion {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contibutors-title {
+    font-weight: 500;
+}
+
+.underline {
+    margin-right: 24px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+
+}
+
+.media-div {
+    height: 380px;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+
+}
+
+.video-options {
+    display: flex;
+
+}
+
+.media-inner-div {
+    display: flex;
+
+}
+
+.media-scroller {
+    width: 1022px;
+    
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 8px;
+}
+
+.media-scroller::-webkit-scrollbar {
+
+    height: 8px;
+    background-color: none;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(var(--scrollerGrey), 0.5);
+
+
+}
+
+.recomendations-div{
+    padding-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+    width: 1000px;
+    flex-direction: column;
+}
+.recomendations-div::-webkit-scrollbar{
+    height: 8px;
+    background-color: none;
+}
+.recomendations-div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(var(--scrollerGrey), 0.5);
+
+}
+.recomendations-inner-div{
+    display: flex;
+    
+}

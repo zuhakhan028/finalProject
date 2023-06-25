@@ -1,0 +1,17 @@
+.video-div{
+    display: flex;
+    flex-direction: row;
+}
+.most-popular-backdrop{
+    width: 533px;
+    height: 300px;
+    object-fit: cover;
+   
+    
+   
+}
+
+.most-popular-poster{
+    width: 200px;
+    height:300px
+}

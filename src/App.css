@@ -1,0 +1,41 @@
+  :root {
+    /* colors */
+    --scrollerGrey: 219, 219, 219;
+    --lightGrey: 227, 227, 227;
+    --darkerGrey: 200, 200, 200;
+    --tmdbDarkBlue: 3, 37, 65;
+    --tmdbLightBlue: 1, 180, 228;
+    --tmdbLighterGreen: 192, 254, 207;
+    --tmdbLightGreen: 30, 213, 169;
+    --tmdbLogoGreen: 144, 206, 161;
+    --tmdbLogoOrange: 253, 193, 112;
+    --tmdbLogoRed: 217, 59, 99;
+    --accountSilver: 149, 149, 149;
+    --accountPink: 234, 20, 140;
+    --accountPurple: 128, 91, 231;
+    --accountGreen: 1, 210, 119;
+    --accountTeal: 1, 198, 172;
+    --accountLightBlue: 1, 180, 228;
+    --accountBlue: 1, 119, 210;
+    --accountOrange: 210, 119, 1;
+    --accountYellow: 210, 144, 1;
+    --accountRed: 212, 2, 66;
+    --imageBorderRadius: 8px;
+  }
+
+
+  h1,h2,h3,h4,h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+body{
+  height: fit-content;
+}
+  .discover {
+    padding-top: 46px;
+    width: 1300px;
+  background-position-x: 50%;
+  background-position-y: 200px;
+  background-size: 1300px;
+
+  }

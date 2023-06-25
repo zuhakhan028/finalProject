@@ -1,0 +1,37 @@
+.discover-section{
+    height: 310px;
+    width:1300px;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size:cover;
+   margin-top: 15px;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(var(--tmdbDarkBlue), 0.8) 0%, rgba(var(--tmdbDarkBlue), 0) 100%),url("https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/9ZyAUZrfccsjtDwYgc7yvOBnqM9.jpg");
+ 
+}
+
+
+.discoverInnerDiv{
+width: 100%;
+height: 244px;
+color: white;
+padding: 30px 40px;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+.discover-upper-div{
+    display: flex;
+    justify-content: flex-start;
+    width: 1220px;
+    height: 88px;
+    margin-bottom: 20px;
+}
+.discover-lower-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 1220px;
+    height: 88px;
+}
+

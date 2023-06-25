@@ -1,0 +1,12 @@
+.header-left-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+   margin-left: 150px;
+}
+.header-left-outer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

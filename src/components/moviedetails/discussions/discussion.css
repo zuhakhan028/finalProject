@@ -1,0 +1,9 @@
+.discussion{
+    width: 90%;
+    height: 35px;
+    border: 1px solid rgba(var(--lightGrey), 1);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom:10px;
+}

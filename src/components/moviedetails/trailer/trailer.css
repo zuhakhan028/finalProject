@@ -1,0 +1,18 @@
+.trailer-frame {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    border: none;
+
+
+}
+
+.trailer-title {
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

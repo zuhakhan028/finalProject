@@ -1,0 +1,19 @@
+.search-div{
+    border-radius: 30px;
+    padding: 5px 20px;
+    padding-right: 0px;
+    width: 1220px;
+    height: 36px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.search{
+    color:white;
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+    width: 50%;
+    border: none;
+}

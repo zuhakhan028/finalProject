@@ -1,0 +1,11 @@
+.shortcut-bar{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
+    margin-top: 72px;
+    
+}
+.shortcut-icon{
+    margin-right: 40px;
+}

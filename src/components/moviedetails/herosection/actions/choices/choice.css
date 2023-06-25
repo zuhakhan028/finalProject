@@ -1,0 +1,16 @@
+.choice{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    color:white;
+    background-color: rgba(var(--tmdbDarkBlue));
+    justify-content: center;
+    align-items: center;
+ border-radius: 50%;
+ margin-right: 20px;
+}
+
+.choice-icons{
+    width: 16px;
+    height: 16px;
+}
