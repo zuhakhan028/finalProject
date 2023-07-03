@@ -19,6 +19,7 @@ import MostPopular from "./mostpopular/mostPopular";
 import Collection from "./collections/collection";
 import Recommendations from "./recommendations/recommendations";
 import Footer from "../footer/footer";
+import { RequestOptions } from "http";
 
 function MovieDetails() {
 
@@ -44,7 +45,6 @@ function MovieDetails() {
 
   const { moviename, movieId }: any = useParams()
 
-  const {recomendedMovieName,recomendedMovieId}=useParams()
 
   const [reviewSelected, setReviewSelected] = useState(true)
 
@@ -63,7 +63,7 @@ function MovieDetails() {
         redirect: 'follow'
       };
 
-      fetch(`https://api.themoviedb.org/3/movie/${movieId||recomendedMovieId}?language=en-US&key=858e15de9492d5090a05cffb61809d40`, requestOptions)
+      fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US&key=858e15de9492d5090a05cffb61809d40`, requestOptions)
         .then(response => response.json())
         .then(result => setMovieDetails(result))
         .catch(error => console.log('error', error));
@@ -84,7 +84,7 @@ function MovieDetails() {
       redirect: 'follow'
     };
 
-    fetch(`https://api.themoviedb.org/3/movie/${movieId||recomendedMovieId}/videos?language=en-US&=858e15de9492d5090a05cffb61809d40`, requestOptions)
+    fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US&=858e15de9492d5090a05cffb61809d40`, requestOptions)
       .then(response => response.json())
       .then(result => setVideoDetails(result))
       .catch(error => error);
@@ -103,16 +103,19 @@ function MovieDetails() {
       redirect: 'follow'
     };
     
-    fetch("https://api.themoviedb.org/3/collection/573436?language=en-US&key=858e15de9492d5090a05cffb61809d40", requestOptions)
+    fetch(`https://api.themoviedb.org/3/collection/${movieId}?language=en-US&key=858e15de9492d5090a05cffb61809d40`, requestOptions)
       .then(response => response.json())
       .then(result => setCollection(result))
       .catch(error => console.log('error', error));
   },[])
- 
+
+
+
 
   let hasCollection=movieDetails?.belongs_to_collection
 
-  if (movieDetails) {
+  if (movieDetails){
+    console.log(movieDetails)
     return (
       <div>
         <Header />
@@ -124,7 +127,7 @@ function MovieDetails() {
               <div>
                 <h3 className="top-billed-cast">Top Billed Cast</h3>
                 <div className="cast-div">
-                  <Cast data={movieId} />
+                  <Cast data={movieId} type={movieDetails.media_type}/>
                   <Link className="see-more" to={`/people/${movieDetails.id}`}>
                     <div className="view-more">view more <span className="right-arrow"><img className="right-arrow-img" src={rightImage}></img></span></div>
                   </Link>
@@ -140,7 +143,7 @@ function MovieDetails() {
 
                 </div>
                 <div>
-                  <Social data={movieDetails.id} choice={choice} />
+                  <Social data={movieDetails.id} choice={choice}/>
                 </div>
 
                 <div className="media-div">

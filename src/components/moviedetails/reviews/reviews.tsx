@@ -11,7 +11,7 @@ interface props {
 function Reviews(props: props) {
 
     let count = 0
-
+if(props.data?.length>0){
     return (
         <div className="review-bottom-div">
             {
@@ -52,6 +52,14 @@ function Reviews(props: props) {
 
         </div>
     )
+}else{
+    return(
+        <div>
+          {`We don't have any reviews for this movie . Would you like to write one?`} 
+        </div>
+    )
+}
+   
 
 }
 

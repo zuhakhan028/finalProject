@@ -6,6 +6,7 @@ import { time } from "../time/time";
 import Action from "./actions/action";
 import Credits from "./credits/credits";
 import { requestOptions } from "../../../module/weeklyDataModel";
+import { getMajorityColor } from "../imagecolor";
 
 // var myHeaders = new Headers();
 // myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NThlMTVkZTk0OTJkNTA5MGEwNWNmZmI2MTgwOWQ0MCIsInN1YiI6IjY0NzhjNTI4Y2Y0YjhiMDBlMmQ0OTMwZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0Yp4enRmfYAeybZdH7lXZmmo1TmznTnoAV4PLrN_ZL8");
@@ -26,7 +27,7 @@ interface props {
     data: any
 }
 function HeroSection(props: props) {
-
+  
     if (props.data) {
         return (
 

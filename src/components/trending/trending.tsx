@@ -35,9 +35,9 @@ function Trending(props: props) {
                     
                 </div>
                 <div className="trending-scroller">
-                         
+                          <div >
                               <TrendingContent weeklyData={props.weeklydata} selected={selected} todayContent={props.todayContent} />
-                         
+                          </div>
                   
                 </div>
 

@@ -6,6 +6,7 @@ import { requestOptions } from "../../../module/todayContentModule";
 interface Props{
     data:any
     choice:number
+    
 }
 function Social(props:Props){
 const [reviews,setReviews]=useState()

@@ -24,9 +24,7 @@ fetch(`https://api.themoviedb.org/3/movie/${props.data}/recommendations?language
   .then(result => setRecomedation(result))
   .catch(error => console.log('error', error));
 
-  const {recomendation,movierecomendedId}=useParams()
-
-  if(recomendations){
+  if(recomendations?.total_results>0){
 
     return(
         recomendations?.results?.map((recomendedMovie:any)=>{
@@ -47,7 +45,7 @@ fetch(`https://api.themoviedb.org/3/movie/${props.data}/recommendations?language
   else{
     return(
         <div>
-
+                  We don't have enough data to suggest any movies based on this movie. You can help by rating movies you've seen.
         </div>
     )
   }

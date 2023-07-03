@@ -6,6 +6,7 @@ import noProfile from "../../../assets/images/logos/no-profile-picture-icon.svg"
 
 interface props{
     data:any
+    type:any
 }
 
 
@@ -21,11 +22,14 @@ var requestOptions:requestOptions = {
   redirect: 'follow'
 };
 
-fetch(`https://api.themoviedb.org/3/movie/${props.data}/credits?language=en-US&key=858e15de9492d5090a05cffb61809d40`, requestOptions)
+  fetch(`https://api.themoviedb.org/3/movie/${props.data}/credits?language=en-US&key=858e15de9492d5090a05cffb61809d40`, requestOptions)
   .then(response => response.json())
   .then(result => setCrewData(result))
   .catch(error => console.log('error', error));
 
+
+
+// console.log(props.data)
 
 if(crewData){
     let count=0
