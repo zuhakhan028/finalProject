@@ -127,7 +127,7 @@ function RecoMovieDetails() {
               <div>
                 <h3 className="top-billed-cast">Top Billed Cast</h3>
                 <div className="cast-div">
-                  <Cast data={recomendedMovieId} />
+                  <Cast data={recomendedMovieId} type={movieDetails.media_type}/>
                   <Link className="see-more" to={`/people/${movieDetails.id}`}>
                     <div className="view-more">view more <span className="right-arrow"><img className="right-arrow-img" src={rightImage}></img></span></div>
                   </Link>

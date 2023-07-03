@@ -1,4 +1,5 @@
 // import './movieCard.css';
+import "./userscore.css"
 
 interface props{
   movie:any
@@ -18,17 +19,11 @@ const UserScore= ({movie}:any) => {
   }
   return (
     <div className="movie-card-container">
-      <div className="movie-thumbnail">
-        <img
-          src={`${process.env.IMAGE_PATH_SM}${movie.backdrop_path}`}
-          alt=""
-        />
-      </div>
       <div className="movie-info">
         <div className="rating-bar-circular">
           <svg
-            width="43"
-            height="43"
+            width="40"
+            height="40"
             viewBox="0 0 160 160"
             style={{ transform: "rotate(-90deg)" }}
           >
@@ -36,7 +31,7 @@ const UserScore= ({movie}:any) => {
               r="70"
               cx="80"
               cy="80"
-              fill="transparent"
+              fill="black"
               stroke="#e0e0e0"
               stroke-width="12px"
             ></circle>
@@ -44,7 +39,7 @@ const UserScore= ({movie}:any) => {
               r="70"
               cx="80"
               cy="80"
-              fill="transparent"
+              fill="black"
               stroke={getColor(movie.vote_average * 10)}
               stroke-linecap="round"
               stroke-width="12px"
@@ -73,8 +68,7 @@ const UserScore= ({movie}:any) => {
             </text>
           </svg>
         </div>
-        <h2 className="movie-title">{movie.title}</h2>
-        <p className="movie-release-date">{movie.release_date}</p>
+       
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const todayContent=TodayContent()
         <div className='discover'  >
         <Discover data={trending} />
         <Trending weeklydata={trending} todayContent={todayContent}/>
-        <LatestTrailers data={""}/>
+        {/* <LatestTrailers data={""}/> */}
         </div>
       
        <Footer/>

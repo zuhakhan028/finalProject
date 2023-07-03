@@ -11,6 +11,7 @@ import { WeeklyContent } from './network/network';
 import SeeMore from './components/moviedetails/herosection/credits/seemore/seemore';
 import AllReviews from './components/moviedetails/allreviews/allReviews';
 import RecoMovieDetails from './components/recomendedmoviecard/recomendedMovieCard';
+import SeriesDetails from './components/discover/seriescard/series';
 const router=createBrowserRouter(
   [{
     path:"/",
@@ -28,6 +29,9 @@ const router=createBrowserRouter(
 },{
   path:"/movies/:moviename/:movieId/recomendations/:recomendedMovieName/:recomendedMovieId",
   element:<RecoMovieDetails/>
+},{
+  path:`/series/:seriesname/:seriesId`,
+  element:<SeriesDetails/>
 }]
    
   
