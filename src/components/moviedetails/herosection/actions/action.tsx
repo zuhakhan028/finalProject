@@ -4,12 +4,13 @@ import Choice from "./choices/choice";
 import Trailer from "../../trailer/trailer";
 import { requestOptions } from "../../../../module/todayContentModule";
 import { JsxElement } from "typescript";
-import UserScore from "../../../userscore/userScore";
+
 import playbutton from "../../../../assets/images/logos/playicon.svg"
 import list from "../../../../assets/images/logos/icons8-bulleted-list-30.png"
 import like from "../../../../assets/images/logos/heart.svg"
 import save from "../../../../assets/images/logos/bookmark.svg"
 import star from "../../../../assets/images/logos/star.svg"
+import UserScore from "../../../userscore/userScore";
 interface props {
     data: any
     vote: any
@@ -41,9 +42,11 @@ function Action(props: props) {
     function isShowing() {
         setShowVideo(!showVideo)
     }
+ 
     return (
         <div className="action">
             {/* <div className="user-score"><UserScore movie={props.vote}/></div> */}
+            <UserScore movie={props.vote}/>
             <Choice data={list} />
             <Choice data={like} />
             <Choice data={save} />

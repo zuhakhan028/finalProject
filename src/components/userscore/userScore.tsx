@@ -1,4 +1,4 @@
-// import './movieCard.css';
+
 import "./userscore.css"
 
 interface props{
@@ -9,9 +9,9 @@ const UserScore= ({movie}:any) => {
   const strokeDashOffset = strokeDashArray * ((100 - movie.vote_average*10) / 100);
 
   const getColor=(percent:number)=>{
-    if(percent >60){
+    if(percent>70){
       return "#60e6a8";
-    }else if(percent >40){
+    }else if(percent <70 && percent>30){
       return "#bdc12f";
     }else{
       return "#981e4b";

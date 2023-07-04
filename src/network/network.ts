@@ -44,7 +44,7 @@ return todayContent
 
 }
 
-export function MovieDetails(movieId:any){
+export function MovieDetails(movieId:any):any{
 
 let [movieDetails,setMovieDetails]=useState()
 var myHeaders = new Headers();

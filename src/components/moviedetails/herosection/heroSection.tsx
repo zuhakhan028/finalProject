@@ -27,7 +27,7 @@ interface props {
     data: any
 }
 function HeroSection(props: props) {
-  
+
     if (props.data) {
         return (
 
@@ -49,7 +49,7 @@ function HeroSection(props: props) {
                                     <div className="seperator">.</div>
                                     <div className="metric-data">{time(props.data.runtime)}</div>
                                 </div>
-                                <Action data={props.data.id} vote={props.data.vote_count}/>
+                                <Action data={props.data.id} vote={props.data}/>
                                 <div>
                                     <i className="tagline">{props.data.tagline}</i>
                                     <div>Overview</div>

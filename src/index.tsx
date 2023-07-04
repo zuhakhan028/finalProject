@@ -4,10 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import TrendingContent from './components/trending/trendingcontent/trendingContent';
-import Render from './components/moviedetails/movieDetails';
-import { MovieDetails } from './network/network';
-import { WeeklyContent } from './network/network';
+import MovieDetails from './components/moviedetails/movieDetails';
 import SeeMore from './components/moviedetails/herosection/credits/seemore/seemore';
 import AllReviews from './components/moviedetails/allreviews/allReviews';
 import RecoMovieDetails from './components/recomendedmoviecard/recomendedMovieCard';
@@ -18,7 +15,7 @@ const router=createBrowserRouter(
     element:<App/>
   },{
     path:`/movies/:moviename/:movieId`,
-    element:<Render/>
+    element:<MovieDetails/>
   },
 {
   path:`/people/:cast`,

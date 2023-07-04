@@ -14,6 +14,7 @@ interface props {
 }
 
 function Trending(props: props) {
+
     const [selected, setSelected] = useState<number>(0)
 
     const [isActiveA, setIsActiveA] = useState(true);
